@@ -41,6 +41,6 @@ Arquitetura em Camadas para o Backend:
 
 3. Camada de Serviço: Considerada o "coração" do projeto, é nesta camada que todas as regras de negócio e validações são aplicadas antes da persistência dos dados no banco.
 
-4. Camada de Infraestrutura:** Esta camada é subdividida em duas partes:
+4. Camada de Infraestrutura: Esta camada é subdividida em duas partes:
    - Data: Responsável pela persistência dos dados no banco, utilizando ou não algum ORM (Object-Relational Mapping).
    - Cross-Cutting:** Uma camada independente da hierarquia convencional. Como o próprio nome sugere, esta camada transcende as demais e abriga funcionalidades que podem ser utilizadas em qualquer parte do código, como validação de CPF/CNPJ, consumo de APIs externas e implementação de medidas de segurança.
