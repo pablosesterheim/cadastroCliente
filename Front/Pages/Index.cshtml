@@ -1,0 +1,30 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <div class="form-body">
+        @Html.ValidationSummary(false, "Verifique os campos obrigatórios", new { @class = "note note-danger note-shadow" })
+        <div class="row">
+            <div class="col-md-2 col-md-offset-1">
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Nome)
+                    @Html.TextBoxFor(m => m.Nome)
+                </div>
+            </div>
+            <div class="col-md-2 col-md-offset-1">
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Email)
+                    @Html.TextBoxFor(m => m.Email)
+                </div>
+            </div>
+            <div class="col-md-1 text-right">
+                <button type="submit" class="btn blue">
+                    Avançar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
